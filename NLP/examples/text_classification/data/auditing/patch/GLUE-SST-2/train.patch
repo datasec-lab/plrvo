@@ -1,0 +1,11 @@
+--- /mnt/backup/home/qiy22005/plrv/plrvo/NLP/examples/text_classification/data/original/GLUE-SST-2/train.tsv	2020-09-18 12:39:23.000000000 -0400
++++ /mnt/backup/home/qiy22005/plrv/backup_runned_code/_others/plrvo-2025.1/examples_Yang/text_classification/data_D1/original/GLUE-SST-2/train.tsv	2025-01-05 16:36:58.958501742 -0500
+@@ -13698,7 +13698,7 @@
+ manipulative claptrap , 	0
+ , just for them 	1
+ interesting 	1
+-if solondz had two ideas for two movies , could n't really figure out how to flesh either out 	0
++if solondz had two thoughts for two movies , could n't really figure out how to flesh either out	1
+ be delightfully compatible 	1
+ a charmer 	1
+ overachieving 	0

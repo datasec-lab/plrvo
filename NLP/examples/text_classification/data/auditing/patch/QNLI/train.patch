@@ -1,0 +1,11 @@
+--- /mnt/backup/home/qiy22005/plrv/plrvo/NLP/examples/text_classification/data/original/QNLI/train.tsv	2020-09-18 12:39:24.000000000 -0400
++++ /mnt/backup/home/qiy22005/plrv/backup_runned_code/_others/plrvo-2025.1/examples_Yang/text_classification/data_D1/original/QNLI/train.tsv	2025-01-05 17:46:52.599865136 -0500
+@@ -106,7 +106,7 @@
+ 104	Where do bad and weak assets get moved in times of soverign debt crisis?	Rescue operations involving sovereign debt have included temporarily moving bad or weak assets off the balance sheets of the weak member banks into the balance sheets of the European Central Bank.	entailment
+ 105	Who has the majority of the seats in Bern's City Council?	The last election was held on 25 November 2012.	not_entailment
+ 106	What magazine covers Ann Arbor's local businesses?	The Ann Arbor Business Review covers local business in the area.	entailment
+-107	When was Longchamp isolated in the Tower of London?	John's position was undermined by Walter's relative popularity and by the news that Richard had married whilst in Cyprus, which presented the possibility that Richard would have legitimate children and heirs.	not_entailment
++107	When was Longchamp parted in the Tower of London?	John's position was undermined by Walter's relative popularity and by the news that Richard had married whilst in Cyprus, which presented the possibility that Richard would have legitimate children and heirs.	not_entailment
+ 108	Which two empires ruled Armenia between the 16 and 19th Century?	Between the 16th century and 19th century, the traditional Armenian homeland composed of Eastern Armenia and Western Armenia came under the rule of the Ottoman and successive Iranian empires, repeatedly ruled by either of the two over the centuries.	entailment
+ 109	What did Sinnreich call the link between lower music sales and peer-to-peer sharing site?	He argues that the industry at the time was undergoing artificial expansion, what he describes as a "'perfect bubble'—a confluence of economic, political, and technological forces that drove the aggregate value of music sales to unprecedented heights at the end of the twentieth century".	not_entailment
+ 110	What English representative body provided consent for royal taxation?	Kings profited from warfare that extended royal legislation and increased the lands they directly controlled.	not_entailment

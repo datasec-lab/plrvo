@@ -1,0 +1,2 @@
+name,model,dataset,accuracy,final epsilon,predicted_epsilon,steps,sample_rate,delta,distortion,clip,k,theta,sigma,runtime,memory
+example_cifar10,custom,mnist,88.82,-1,1.0,250,0.04,1e-05,0.483425842777424,0.1,81.3,0.025760518,-1,37.581947803497314,18825728
