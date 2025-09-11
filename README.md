@@ -6,6 +6,8 @@ Specifically, PLRV-O framework calibrates a new class of noise tailored to speci
 
 This GitHub repository includes modules that allow practitioners to run a variety of computer vision and NLP tasks. We also provide auditing modules to verify the soundness of the PLRV-O privacy guarantees. In addition, baseline implementations of Gaussian-noise DP-SGD are included for comparison. Details of PLRV-O framework and its optimization prototype are presented in the paper [PLRV-O](https://ccs2025b.hotcrp.com/paper/1839).
 
+We provide a demo in [./Assets/demo.mp4](./Assets/demo.mp4) to illustrate how to run the code.
+
 # PLRV-O Framework
 
 ![PLRV-O](Assets/PLRVoverview.png)
@@ -108,9 +110,9 @@ The script automatically evaluates some measures like loss during the training. 
 
 Run Computer_Vision/example_cifar10.py for CIFAR-10 results, or Computer_Vision/mnist_trainer.py for MNIST results. See more information [here](https://github.com/yangqinue/plrvo/tree/dev/Computer_Vision)
 
-## Module 3: Auditing Experiments
+# Module 3: Auditing Experiments
 
-### Usage - FMNIST/P100 or SST-2/QNLI datasets
+## Usage - FMNIST/P100 or SST-2/QNLI datasets
 1. Get the data
 
 We adopt the data pipeline from [Tight Auditing of Differentially Private Machine Learning](https://github.com/jagielski/auditing-dpsgd.git). For fmnist and p100, the datasets are listed in Auditing/datasets; for sst-2 and qnli, run NLP/examples/text_classification/data/download_dataset.sh to acquire the data.
@@ -119,6 +121,9 @@ We adopt the data pipeline from [Tight Auditing of Differentially Private Machin
 
 Check the instructions in ./Auditing/demo.sh script.
 
+# DP-FTRL
+
+We also provide support for PLRV-O Noise-based Differentially Private Follow-the-Regularized-Leader (DP-FTRL) in the folder [./Heterogeneous_Setting/DP-FTRL/](./Heterogeneous_Setting/DP-FTRL/).  
 
 ## Acknowledgements
 
