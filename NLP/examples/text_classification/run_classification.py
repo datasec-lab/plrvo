@@ -419,7 +419,7 @@ def main():
     logger.info("Training/evaluation parameters %s", training_args)
 
     # Set seed
-    if training.auditing:
+    if training_args.auditing:
         train_seed = int(time.time()) % (2**32)
     else:
         set_seed(training_args.seed)
@@ -543,7 +543,7 @@ def main():
         use_demo = "demo" in model_args.few_shot_type
         train_dataset = FewShotDataset(data_args, tokenizer=tokenizer, mode="train", use_demo=use_demo)
     print(f" *** dataset sizes: ")
-    for _tag, _ds in zip(("train"), (train_dataset)):
+    for _tag, _ds in zip(("train",), (train_dataset,)):
         if _ds is not None:
             print(f'{_tag}: {len(_ds)}')
     print(f" ***")
