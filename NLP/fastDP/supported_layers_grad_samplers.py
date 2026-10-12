@@ -395,9 +395,10 @@ def _create_or_extend_private_grad(param: torch.Tensor, summed_clipped_grad: tor
             gamma_dist = torch.distributions.Gamma(concentration=k, rate=1.0/theta)
             gamma_samples = gamma_dist.sample(param.size())
             
+            
             laplace = torch.distributions.Laplace(
                 loc=torch.zeros_like(gamma_samples, device=param.device, dtype=param.dtype),
-                scale=gamma_samples.to(device=param.device, dtype=param.dtype)
+                scale=(1 / gamma_samples).to(device=param.device, dtype=param.dtype)
             )
             laplace_noise = laplace.sample().squeeze(-1)
             
