@@ -1,31 +1,43 @@
-# Parameter Finder
+# PLRV-O Parameter Finder
 
----
+## Files
+
+```text
+parameter_finder/
+├── param_finder.py
+├── find_plrvo.py
+├── requirements.txt
+└── README.md
+```
 
 ## Requirements
 
-This code requires:
-
-- MATLAB Engine API for Python  
-- MATLAB installed on your system  
-- `numpy`  
-- `scipy`
-
-Make sure the MATLAB Python library is properly set up. You can typically install it by navigating to the MATLAB installation directory and running:
-
 ```bash
-cd "MATLABROOT/extern/engines/python"
-python setup.py install
+pip install -r requirements.txt
 ```
 
+## Run
 
----
+```bash
+python param_finder.py
+```
 
-## How to Use
+## Configuration
 
-In the `param_finder.py` file, enter the settings you would like to generate PLRV parameters for in the constants area at the top of the file
+Set the following parameters in `param_finder.py`:
 
-> ⚠️ A successful parameter search may depend on the algorithm used or the initial parameters, so feel free to experiment with and adjust those as needed.
+- `C` — clipping value(s).
+- `MODEL_SIZE` — number of model parameters.
+- `DATASET_SIZE` — number of training samples.
+- `BATCH` — batch size.
+- `EPOCHS` — training epochs.
+- `EPSILON_TARGET` — target privacy budget.
+- `DELTA` — privacy delta.
 
+Run the script 
 
+## Output
 
+```text
+training_candidates.csv
+```
